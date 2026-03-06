@@ -1,6 +1,3 @@
-// JavaScript for Hobby Interaction Enhancements
-
-// Add a new hobby item to the list
 function addHobby() {
     const input = document.getElementById('hobbyInput');
     const hobbyList = document.getElementById('hobbyList');
@@ -19,18 +16,15 @@ function addHobby() {
         listItem.appendChild(deleteButton);
         hobbyList.appendChild(listItem);
 
-        // Clear the input box
         input.value = '';
     }
 }
 
-// Alert on form submission
 function submitForm(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
     alert('Form submitted successfully!');
 }
 
-// Display current date and time in the footer
 function updateFooterTime() {
     const footerTime = document.getElementById('footerTime');
     const now = new Date();
@@ -38,8 +32,7 @@ function updateFooterTime() {
     footerTime.textContent = now.toLocaleDateString('en-US', options);
 }
 
-// Update the footer time every second
 setInterval(updateFooterTime, 1000);
 
-// Initialize the footer time on page load
+
 updateFooterTime();
