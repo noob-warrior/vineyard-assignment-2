@@ -244,16 +244,16 @@ section p {
 }
 
 .footer {
-    background-color: #4A4A4A; /* Neutral dark gray */
+    background-color: #4A4A4A; 
     color: white;
     text-align: center;
     padding: 15px 0;
-    position: relative; /* Changed from fixed to relative */
+    position: relative; 
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for better separation */
-    margin-top: 20px; /* Added margin to separate from content */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px; 
 }
 
 .footer p {
@@ -261,7 +261,7 @@ section p {
 }
 
 .footer a {
-    color: #6C63FF; /* Updated link color to match the theme */
+    color: #6C63FF; 
     text-decoration: none;
     margin: 0 10px;
     border: 1px solid #6C63FF;
@@ -418,7 +418,6 @@ section p {
     }
 }
 
-/* Styling for the hobbies section */
 .hobbies-section {
     text-align: center;
     margin: 20px 0;
@@ -473,3 +472,4 @@ section p {
 .hobbies-section li button:hover {
     background-color: #d32f2f;
 }
+
