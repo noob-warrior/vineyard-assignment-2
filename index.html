@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">Ritesh kumar</h1>
+            <p class="header-tagline">Aspiring Full Stack Developer</p>
+        </div>
+    </header>
+
+   <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hobby">Hobby</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Portfolio Website for Vineyard Assignment -->
+    <main class="container">
+        <section id="home" class="home-section">
+            <h2 class="section-subtitle">Myself: Brief intro</h2>
+        <!-- Meta tags and external resources -->
+            <p>My name is Ritesh kumar. I am currently pursuing B.Sc (H) Computer Science from Ramanujan College. I have recently joined the Vineyard program to learn MERN stack.</p>
+            <h3>My Favorite Hobby: Web Development</h3>
+            <p>Web development is my favorite hobby because it allows me to create, innovate, and solve problems while continuously learning new skills. It offers unique professional and personal benefits that drive my passion for this field.</p>
+            <h3 id="benefits-heading">Benefits of Web Development as a Hobby:</h3>
+            <ol class="benefits-list" aria-labelledby="benefits-heading">
+                <li><strong>Creativity:</strong> The ability to combine design and functionality to create engaging digital experiences.</li>
+                <li><strong>Problem Solving:</strong> Developing logical solutions to complex challenges and debugging issues effectively.</li>
+                <li><strong>Career Growth:</strong> Continuously expanding skills and staying relevant in a rapidly evolving tech industry.</li>
+            </ol>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>I am Ritesh kumar. I am a passionate and dedicated student pursuing a B.Sc (H) Computer Science degree at Ramanujan College. My journey in web development began with the Vineyard program, where I am currently learning the MERN stack. I enjoy solving problems and building applications that are both functional and user-friendly.</p>
+        </section>
+        <!-- Navigation Bar -->
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce application built with React and Node.js featuring product filtering, shopping cart, and payment integration.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/noob-warrior" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+        <!-- Main Content -->
+
+                <div class="project-card">
+                <!-- Home Section: Brief Intro and Benefits -->
+                    <h3>Weather App</h3>
+                    <p>A responsive weather application using a REST API to fetch real-time weather data. Built with vanilla JavaScript and CSS Grid for a modern layout.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/noob-warrior" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Task Management System</h3>
+                    <p>A collaborative task management tool built with React and Firebase, allowing users to create, assign, and track project tasks in real-time.</p>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <!-- About Section -->
+                    </div>
+                </div>
+            </div>
+        </section>
+                <!-- Projects Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" onsubmit="handleContactSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+        <section id="hobby" class="hobby-section">
+            <h2>My Favorite Hobby</h2>
+            <p>Web development is my favorite hobby because it allows me to create, innovate, and solve problems while continuously learning new skills.</p>
+            <h3 id="hobby-benefits-heading">Benefits of Web Development:</h3>
+            <ol id="hobby-benefits-list">
+                <li><strong>1. Creativity:</strong> The ability to combine design and functionality to create engaging digital experiences. <button class="delete-btn">Delete</button></li>
+                <li><strong>2. Problem Solving:</strong> Developing logical solutions to complex challenges and debugging issues effectively. <button class="delete-btn">Delete</button></li>
+                <li><strong>3. Career Growth:</strong> Continuously expanding skills and staying relevant in a rapidly evolving tech industry. <button class="delete-btn">Delete</button></li>
+            </ol>
+            <div class="hobby-input">
+                <input type="text" id="hobby-input" placeholder="Add a new hobby benefit">
+                <button id="add-benefit-btn">Add Hobby</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Connect with me on social media:</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ritesh-kumar-720854251" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <span title="LinkedIn">🔗 LinkedIn</span>
+                </a>
+                <a href="https://github.com/noob-warrior" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <span title="GitHub">💻 GitHub</span>
+                </a>
+                <a href="https://x.com/RiteshKuma6112" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <span title="Twitter">🐦 Twitter</span>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Ritesh kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Contact form submission handler
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            alert('Thank you for your message! Your form has been submitted successfully.');
+        }
+
+        // Initialize delete buttons for existing items
+        function initializeDeleteButtons() {
+            const deleteButtons = document.querySelectorAll('.delete-btn');
+            deleteButtons.forEach(button => {
+                // Remove old listeners by cloning
+                const newButton = button.cloneNode(true);
+                button.parentElement.replaceChild(newButton, button);
+                
+                newButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const listItem = newButton.parentElement;
+                    const list = document.getElementById('hobby-benefits-list');
+                    listItem.remove();
+                    updateListNumbers();
+                });
+            });
+        }
+
+        // Update list numbers after deletion
+        function updateListNumbers() {
+            const benefitList = document.getElementById('hobby-benefits-list');
+            Array.from(benefitList.children).forEach((item, index) => {
+                const strongTag = item.querySelector('strong');
+                if (strongTag) {
+                    const text = strongTag.textContent.split(': ')[1] || strongTag.textContent;
+                    strongTag.textContent = `${index + 1}. ${text}`;
+                }
+            });
+        }
+
+        // Add new hobby benefit
+        document.getElementById('add-benefit-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const input = document.getElementById('hobby-input');
+            const benefitList = document.getElementById('hobby-benefits-list');
+            const newBenefit = input.value.trim();
+
+            if (newBenefit) {
+                const listItem = document.createElement('li');
+                const listLength = benefitList.children.length + 1;
+                
+                const titleAndDesc = newBenefit.split(':');
+                const title = titleAndDesc[0].trim();
+                const description = titleAndDesc[1] ? titleAndDesc[1].trim() : '';
+                
+                listItem.innerHTML = `<strong>${listLength}. ${title}:</strong> ${description}`;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.className = 'delete-btn';
+                deleteButton.type = 'button';
+                deleteButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    listItem.remove();
+                    updateListNumbers();
+                });
+
+                listItem.appendChild(deleteButton);
+                benefitList.appendChild(listItem);
+                input.value = '';
+            }
+        });
+
+        // Initialize delete buttons on page load
+        window.addEventListener('load', function() {
+            initializeDeleteButtons();
+        });
+
+        // Dynamic footer date and time
+        function updateFooterTime() {
+            const footer = document.querySelector('.footer');
+            const date = new Date();
+            
+            const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            
+            const dayName = days[date.getDay()];
+            const dayNum = String(date.getDate()).padStart(2, '0');
+            const monthName = months[date.getMonth()];
+            const year = date.getFullYear();
+            const hours = String(date.getHours()).padStart(2, '0');
+            const minutes = String(date.getMinutes()).padStart(2, '0');
+            const seconds = String(date.getSeconds()).padStart(2, '0');
+            
+            const formattedDate = `${dayName}, ${dayNum} ${monthName} ${year}, ${hours}:${minutes}:${seconds}`;
+
+            let timeElement = document.getElementById('footer-time');
+            if (!timeElement) {
+                timeElement = document.createElement('p');
+                timeElement.id = 'footer-time';
+                footer.appendChild(timeElement);
+            }
+            timeElement.textContent = `Current Date and Time: ${formattedDate}`;
+        }
+
+        updateFooterTime();
+        setInterval(updateFooterTime, 1000);
+    </script>
+
+    <style>
+        .hobby-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .hobby-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: #2c3e50;
+        }
+
+        .hobby-section p {
+            font-family: 'Poppins', sans-serif;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        .hobby-section ol {
+            list-style-type: decimal;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .hobby-section li {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hobby-section .delete-btn {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .hobby-section .delete-btn:hover {
+            background-color: #c0392b;
+        }
+
+        .hobby-input {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hobby-input input {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .hobby-input button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .hobby-input button:hover {
+            background-color: #219150;
+        }
+    </style>
+</body>
+</html>
