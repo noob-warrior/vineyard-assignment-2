@@ -164,8 +164,10 @@
             Array.from(benefitList.children).forEach((item, index) => {
                 const strongTag = item.querySelector('strong');
                 if (strongTag) {
-                    const text = strongTag.textContent.split(': ')[1] || strongTag.textContent;
-                    strongTag.textContent = `${index + 1}. ${text}`;
+                    // Extract the benefit name (e.g., "Creativity:" from "1. Creativity:")
+                    const currentText = strongTag.textContent;
+                    const benefitName = currentText.split('. ').slice(1).join('. ');
+                    strongTag.textContent = `${index + 1}. ${benefitName}`;
                 }
             });
         }
